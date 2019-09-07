@@ -1,0 +1,33 @@
+@import '../base/variables.scss';
+$module: 'menu';
+
+.#{$module} {
+    font-family: 'Work Sans';
+    
+    &--main {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+    }
+
+    &__items {
+        // padding-left: 2em;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+
+
+@include respond-to(medium) {
+    &--main{
+        background-color: blue;
+    }
+}
+}

@@ -1,0 +1,15 @@
+
+$module: 'header';
+
+.#{$module} {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        position: absolute;
+        z-index: 9999;
+        img {
+            max-height: 100px;
+        }
+    }
+};
