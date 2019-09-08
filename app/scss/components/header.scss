@@ -9,8 +9,9 @@ $module: 'header';
 
     &__img {
         max-width: 70px;
-        z-index: 100;
-        padding: 10px;
+        z-index: 98;
+        padding-top: 10px;
+        padding-left: 30px;
 
         img {
             max-height: 100px;
@@ -24,7 +25,7 @@ $module: 'header';
         text-transform: uppercase;
     }
 
-    .button {
+    .toggle {
         display:inline;
         position:absolute;
         right:50px;
@@ -32,10 +33,11 @@ $module: 'header';
         z-index:999;
         font-size:30px;
     }
-    .button a {
+    .toggle a {
         text-decoration:none;
     }
-    .btn-open:after {
+
+    .toggle-open:after {
         color:black;
         content:"\f0c9";
         font-family:"FontAwesome";
@@ -44,10 +46,12 @@ $module: 'header';
         -webkit-transition:all .2s linear 0s;
         -o-transition:all .2s linear 0s;
     }
-    .btn-open:hover:after {
+
+    .toggle-open:hover:after {
         color:$color-b;
     }
-    .btn-close:after {
+
+    .toggle-close:after {
         color:black;
         content:"\f00d";
         font-family:"FontAwesome";
@@ -56,23 +60,27 @@ $module: 'header';
         -webkit-transition:all .2s linear 0s;
         -o-transition:all .2s linear 0s;
     }
-    .btn-close:hover:after {
+
+    .toggle-close:hover:after {
         color: black;
     }
 
-    @media (min-width: 48em) {
+    @media (min-width: $bp-small) {
         background-color: none;
         flex-direction: column;
         height: unset;
+        
         &__title {
             display: none;
         }
 
         &__img {
+            position: absolute;
             padding-left: 100px;
+            z-index: 101;
         }
 
-        .button { 
+        .toggle { 
             display: none;
         }
     }

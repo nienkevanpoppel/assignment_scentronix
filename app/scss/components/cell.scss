@@ -1,28 +1,45 @@
 $module: 'cell';
 
-.#{$module} {
-    display: inline-block;
 
+.#{$module} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    &-10 {
+        width: 10%;
+    }
+    &-20 {
+        width: 20%;
+    }
     &-25 {
         width: 25%;
     }
 
-    &-33{
-        width: 33%;
+    &-30{
+        width: 30%;
     }
 
     &-50 {
-        width: 45%;
+        width: 50%;
     }
 
     &__img {
-        width: 90%;
-        display: flex;
+        width: 100%;
         margin: auto;
     }
-    
+
+    &__icon { 
+        max-height: 40px;
+        margin: auto;
+    }
+   
     @media (min-width: $bp-small) {
         &--small{
+            &-20 {
+                width: 20%;
+            }
+            
              &-25 {
                 width: 25%;
             }
@@ -32,8 +49,9 @@ $module: 'cell';
             }
             
             &-50 {
-                width: 45%;
+                width: 50%;
             }
         }
     }
 }
+

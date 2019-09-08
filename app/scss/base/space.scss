@@ -25,5 +25,11 @@
 
 	.h-space--r#{$space} {
 		margin-right: $distance;
-	}
+    }
+    
+    @media (min-width: $bp-small){
+        .h-space--small-t#{$space} {
+            margin-top: $distance !important;
+        }
+    }
 }

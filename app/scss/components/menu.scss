@@ -56,7 +56,6 @@ $module: 'menu';
         }
     }
     
-
     @media (min-width: $bp-small) {
         display: flex;
         flex-direction: row;
@@ -64,12 +63,14 @@ $module: 'menu';
 
         &Wrapper { 
             display:inline;
+            position:unset;
             height:auto;
             width:100%;
             overflow:auto;
             padding: 0;
   
         }
+        
         &--main {
             height: 70px;
             background-color: white;

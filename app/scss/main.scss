@@ -1,16 +1,22 @@
 @import 'base/variables.scss';
 
-@import 'components/container.scss';
-@import 'components/header.scss';
-@import 'components/menu.scss';
-@import 'components/cell.scss';
-@import 'components/heading.scss';
-@import 'components/textcontent.scss';
+@import 'base/align.scss';
+@import 'base/space.scss';
+
 @import 'components/breadcrumbs.scss';
-@import 'components/space.scss';
+@import 'components/button.scss';
+@import 'components/card.scss';
+@import 'components/cell.scss';
+@import 'components/container.scss';
+@import 'components/grid.scss';
+@import 'components/header.scss';
+@import 'components/heading.scss';
+@import 'components/menu.scss';
+@import 'components/textcontent.scss';
 
 
 body {
-    font-family: $font-base;
     margin: 0;
+    font-family: $font-base;
+    
 }

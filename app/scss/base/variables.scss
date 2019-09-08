@@ -16,8 +16,15 @@ $bp-tiny:                          30em;
 $bp-small:                         48em;
 $bp-medium:                        64em;
 $bp-large:                         80em;		
-									
+            
+// Multipliers for spaces around components
+// ------------------------------------------------------------
+
 $space-multipliers: 0 1 2 3 4 5 6 7 8 9 10;
+
+
+// Colors that aren't standard
+// ------------------------------------------------------------
 
 $color-a:						#f8f5f0;
 $color-b:						#b13239;

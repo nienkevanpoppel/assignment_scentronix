@@ -4,12 +4,21 @@ $module: 'breadcrumbs';
     &__list {
         padding: 0;
         list-style-type: none;
+    align-self: flex-start;
         >li {
             display: inline-block;
             &:after{
                 content: '>';
                 color: $color-b;
             }
+        }
+    }
+
+    &__item {
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: $color-b;
         }
     }
 }

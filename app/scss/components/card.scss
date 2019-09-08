@@ -1,0 +1,35 @@
+$module: 'card';
+
+.#{$module} {
+    background-color: $color-a;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 15px 10px;
+
+    &__imagecontainer {
+        height: 200px;
+        margin: 10px;
+        width: 100%;
+        float: left;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    @media (min-width: $bp-small) {
+        &__imagecontainer{
+            width: 90%;
+        }
+
+        &__img{
+            width: unset;
+            height: 100%;
+            display: block;
+        }
+    }
+}
