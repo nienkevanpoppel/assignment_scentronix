@@ -1,33 +1,98 @@
-@import '../base/variables.scss';
 $module: 'menu';
 
 .#{$module} {
     font-family: 'Work Sans';
-    
+   
+    &Wrapper { 
+        display:none;
+        position:fixed;
+        top:0;
+        height:100%;
+        width:100%;
+        overflow:auto;
+        z-index:99;
+        background-color: white;
+        padding-left: 60px;
+        padding-top: 60px;
+
+        &--active { 
+            display: inline;
+        }
+    }
+
     &--main {
-        display: flex;
-        flex-direction: row;
-        background-color: yellow;
+        .#{$module}__item {
+            font-weight: $font-bold;
+        }
     }
 
     &__items {
-        // padding-left: 2em;
+        width: 100%;
+        margin: 15px;
+        list-style-type: none;
     }
 
     &__item {
-        display: inline-block;
+        padding: 5px;
     }
 
     &__link {
         text-decoration: none;
         color: black;
         text-transform: uppercase;
-    }
 
+        &:hover{
+            color: $color-b;
+        }
 
-@include respond-to(medium) {
-    &--main{
-        background-color: blue;
+        &--active {
+            padding-bottom: 2px;
+            border-bottom: 2px solid $color-b;
+        }
     }
-}
+    &--secondary {
+        .#{$module}__link{
+            font-size: 15px;
+        }
+    }
+    
+
+    @media (min-width: 48em) {
+        display: flex;
+        flex-direction: row;
+        padding-left: 100px;
+
+        &Wrapper { 
+            display:inline;
+            height:auto;
+            width:100%;
+            overflow:auto;
+            padding: 0;
+  
+        }
+        &--main {
+            height: 70px;
+            background-color: white;
+
+            .#{$module}__item {
+                padding-top: 10px;
+                padding-right: 10%;
+            }
+        }
+
+        &--secondary {
+           background-color: $color-a;
+
+           .#{$module}__item {
+            padding-right: 5%;
+            }
+        }
+        
+        &__items { 
+            padding-left: 80px;
+        }
+        &__item {
+            display: inline-block;
+        }
+    }
 }

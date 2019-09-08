@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/main.css">
-    <title>Document</title>
+    <title>Recipes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        
         <div class="header__img">
             <img src="../img/header-img.png">
         </div>
+        <div class="header__title">
+            monkey recipes
+        </div>
+        <div class="button">
+            <a class="btn-open" href="#"></a>
+        </div>  
         <div class="menuWrapper">
             <div class="menu menu--main">
                 <ul class="menu__items">
@@ -21,7 +28,7 @@
                         <a class="menu__link" href="/shop">shop</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/recipes">recipes</a>
+                        <a class="menu__link menu__link--active" href="/recipes">recipes</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="/learn">learn</a>
@@ -51,4 +58,6 @@
         </div>
     </div>
 </body>
+<script src='../js/jquery.min.js'></script>
+<script src="../js/main.js"></script>
 </html>

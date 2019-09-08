@@ -4,9 +4,9 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
 gulp.task('build', function(done) {
-  gulp.src('app/scss/**/*.scss')
+  gulp.src('app/scss/main.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(concat('main.css'))
+  // .pipe(concat('main.css'))
   .pipe(gulp.dest('app/css'));
   done();
   });
