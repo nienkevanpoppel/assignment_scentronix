@@ -1,0 +1,13 @@
+$module: 'heading';
+
+.#{$module} {
+    font-weight: $font-bold;
+
+    &--1 {
+        font-size: 30px;
+    }
+
+    &--2 {
+        font-size: 20px;
+    }
+}

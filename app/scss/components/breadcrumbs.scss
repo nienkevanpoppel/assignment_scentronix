@@ -1,0 +1,15 @@
+$module: 'breadcrumbs';
+
+.#{$module}{
+    &__list {
+        padding: 0;
+        list-style-type: none;
+        >li {
+            display: inline-block;
+            &:after{
+                content: '>';
+                color: $color-b;
+            }
+        }
+    }
+}

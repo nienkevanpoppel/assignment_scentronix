@@ -1,0 +1,29 @@
+@each $space in $space-multipliers {
+	$distance: $space*10+px;
+
+	.h-space--v#{$space} {
+		margin-top: $distance;
+		margin-bottom: $distance;
+	}
+
+	.h-space--h#{$space} {
+		margin-right: $distance;
+		margin-left: $distance;
+	}
+
+	.h-space--t#{$space} {
+		margin-top: $distance;
+	}
+
+	.h-space--b#{$space} {
+		margin-bottom: $distance;
+	}
+
+	.h-space--l#{$space} {
+		margin-left: $distance;
+	}
+
+	.h-space--r#{$space} {
+		margin-right: $distance;
+	}
+}

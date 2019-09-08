@@ -1,0 +1,39 @@
+$module: 'cell';
+
+.#{$module} {
+    display: inline-block;
+
+    &-25 {
+        width: 25%;
+    }
+
+    &-33{
+        width: 33%;
+    }
+
+    &-50 {
+        width: 45%;
+    }
+
+    &__img {
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+    
+    @media (min-width: $bp-small) {
+        &--small{
+             &-25 {
+                width: 25%;
+            }
+
+            &-33{
+                width: 33%;
+            }
+            
+            &-50 {
+                width: 45%;
+            }
+        }
+    }
+}
